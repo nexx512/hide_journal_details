@@ -11,7 +11,7 @@ The plugin is translated to English and German.
 
 ## Compatibility
 
-This plugin has been testet with Redmine 2.2.2
+This plugin has been testet with Redmine 2.2.2 and 3.3.2
 
 ## Installation
 
