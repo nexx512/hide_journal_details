@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'hide_journal_details.css', :plugin => 'hide_journal_details' %>
+<%= javascript_include_tag 'hide_journal_details.js', :plugin => 'hide_journal_details' %>
+
+<% if @journals.present? %>
+  <div id="toggle-journal-details-div">
+    <a class="collapsible collapsed toggle-journal-details" id="show-journal-details" onclick="showJournalDetails();" href="javascript:void(0);">
+      <%= l(:label_show_journal_details) %>
+    </a>
+    <a class="collapsible toggle-journal-details" id="hide-journal-details" onclick="hideJournalDetails();" href="javascript:void(0);">
+      <%= l(:label_hide_journal_details) %>
+    </a>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(initializeVisibility);
+  </script>
+<% end %>
